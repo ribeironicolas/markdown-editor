@@ -1,0 +1,100 @@
+@import 'normalize.css';
+@import 'highlight.js/styles/base16/dracula.css';
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+body > div {
+  height: 100%;
+  width: 100%;
+}
+
+html,
+body {
+  margin: 0;
+}
+
+.editor {
+  display: flex;
+  flex-wrap: wrap;
+  height: 100%;
+  width: 100%;
+}
+
+.editor-header {
+  background-color: #222;
+  display: flex;
+  justify-content: flex-end;
+  height: 40px;
+  width: 100%;
+}
+
+.editor-header .save-message {
+  align-items: center;
+  color: #fff;
+  display: flex;
+  font-weight: 700;
+  margin: 0;
+  padding: 0 20px;
+  text-transform: uppercase;
+}
+
+textarea,
+.view {
+  height: calc(100% - 40px);
+  min-width: 40%;
+  max-width: 40%;
+}
+
+.files-list-container {
+  background-color: #888888;
+  display: flex;
+  flex-direction: column;
+  height: calc(100% - 40px);
+  min-width: 20%;
+  max-width: 20%;
+  overflow: auto;
+}
+
+.files-list-container ul {
+  padding: 0;
+  list-style: none;
+  text-align: center;
+  overflow: auto;
+}
+
+.files {
+  color: #fff;
+  font-family: sans-serif;
+  text-align: center;
+  text-decoration: underline;
+}
+
+.buttons {
+  border: 1px solid #000;
+  background-color: #fff;
+  margin-bottom: 10px;
+  padding: 10px 5px;
+  width: 90%;
+}
+
+textarea {
+  font-size: 18px;
+  padding: 10px;
+  resize: none;
+}
+
+textarea:focus {
+  outline: 0 none;
+}
+
+.view {
+  background: #333;
+  color: #fff;
+  padding: 10px;
+  font-family: sans-serif;
+  overflow: auto;
+}
